@@ -1,0 +1,13 @@
+.panel_backgorund{
+    /* background-color: black; */
+    background-image: url("../../assets/wallpaper_uefa.jpg");
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+
+.cursor_pointer:hover{
+    background-color: gray;
+    color:white
+}

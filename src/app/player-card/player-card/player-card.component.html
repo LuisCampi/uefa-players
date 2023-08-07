@@ -1,0 +1,23 @@
+<div class="container mt-5 background">
+    <h1 class="text-center">Datos del jugador</h1>
+    <div class="row mt-5 mb-5" *ngFor="let entry of keys">
+        <div *ngIf="entry[0]!=='id' && entry[0]==='price'" class="col-6 justify-content-center">Precio</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='player_agent'" class="col-6 justify-content-center">Agente del Jugador</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='joined_club'" class="col-6 justify-content-center">Fecha de union al Club</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='max_price'" class="col-6 justify-content-center">Precio Maximo</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='league'" class="col-6 justify-content-center">Liga</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='contract_expires'" class="col-6 justify-content-center">Fecha de expiracion de contrato</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='position'" class="col-6 justify-content-center">Posicion</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='height'" class="col-6 justify-content-center">Altura</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='full_name'" class="col-6 justify-content-center">Nombre Completo</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='nationality'" class="col-6 justify-content-center">Nacionalidad</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='shirt_nr'" class="col-6 justify-content-center">Numero de Camiseta</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='outfitter'" class="col-6 justify-content-center">Sponsor de vestimenta</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='name'" class="col-6 justify-content-center">Nombre</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='club'" class="col-6 justify-content-center">Club</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='foot'" class="col-6 justify-content-center">Pie Dominante</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='place_of_birth'" class="col-6 justify-content-center">Lugar De Nacimiento</div>
+        <div *ngIf="entry[0]!=='id' && entry[0]==='age'" class="col-6 justify-content-center">Edad</div>
+        <div *ngIf="entry[0]!=='id'" class="col-6 justify-content-center">{{entry[1]}}</div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="container panel_backgorund">
+    <h1 class="text-white">Estadisticas</h1>
+    <div class="row">
+        <div class="col-12 mt-4">
+            <app-chart *ngIf="jugadoresPorEdad.length!==0" 
+                [myData]="jugadoresPorEdad"
+                title="Histograma de jugadores por edad"
+                [type]="type.Histogram"
+            ></app-chart>
+        </div>
+        <div class="col-12 mt-4">
+            <app-chart *ngIf="jugadoresPorAltura.length!==0" 
+                [myData]="jugadoresPorAltura"
+                title="Histograma de jugadores por altura"
+                [type]="type.Histogram"
+            ></app-chart>
+        </div>
+        <div class="col-12 mt-4">
+            <app-chart *ngIf="jugadoresPorNAcionalidad.length!==0" 
+                [myData]="jugadoresPorNAcionalidad"
+                title="Nacionalidad de los jugadores"
+                [type]="type.PieChart"
+            ></app-chart>
+        </div>
+        <div class="col-12 mt-4">
+            <app-chart *ngIf="jugadoresPorMaximoValor.length!==0" 
+                [myData]="jugadoresPorMaximoValor"
+                title="Histograma de jugadores por Maximo precio"
+                [type]="type.Histogram"
+            ></app-chart>
+        </div>
+        <div class="col-12 mt-4">
+            <app-chart *ngIf="jugadoresPorPrecioActual.length!==0" 
+                [myData]="jugadoresPorPrecioActual"
+                title="Histograma de jugadores por Precio"
+                [type]="type.Histogram"
+            ></app-chart>
+        </div>
+        <div class="col-12 mt-4">
+            <app-chart *ngIf="jugadoresPorBirth.length!==0" 
+                [myData]="jugadoresPorBirth"
+                title="Lugar de Nacimiento"
+                [type]="type.PieChart"
+            ></app-chart>
+        </div>
+        <div class="col-12 mt-4">
+            <app-chart *ngIf="jugadoresPorPosition.length!==0" 
+                [myData]="jugadoresPorPosition"
+                title="Posiciones"
+                [type]="type.PieChart"
+            ></app-chart>
+        </div>
+    </div>
+</div>

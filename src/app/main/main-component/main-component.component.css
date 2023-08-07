@@ -1,0 +1,12 @@
+.image_size{
+    height: 130px;
+    width: 130px;
+}
+
+.image_size:hover{
+    height: 200px;
+    width: 200px;
+    position:sticky;
+    z-index: 99;
+    cursor: pointer;
+}

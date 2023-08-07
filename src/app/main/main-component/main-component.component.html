@@ -1,0 +1,8 @@
+<div class="container">
+    <h1 class="mt-4">Ligas top5 de la UEFA</h1>
+    <div class="row d-flex justify-content-center mt-4">
+        <div *ngFor="let liga of ligas" class="col-4 mt-5 image_container" (click)="mostrarJUgadores(liga.name)">
+          <img class="image_size" src="{{liga.image_url}}" alt="{{liga.name}}">
+        </div>
+    </div>
+</div>

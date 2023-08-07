@@ -1,0 +1,13 @@
+<div class="container panel_backgorund">
+    <h1 class="text-white">{{liga_Actual}}  <span class="badge bg-secondary cursor_pointer" [routerLink]="['/estadistica', liga_Actual]">Estadisticas</span></h1>
+    <div class="row d-flex justify-content-center mt-5">
+        <h2 class="text-white">Jugadores</h2>
+        <div *ngFor="let player of players" class="col-4 mt-5 image_container">
+          <div class="card cursor_pointer">
+            <div class="card-body text-center" (click)="mostrarPlayer(player)">
+                {{player.name}}
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
