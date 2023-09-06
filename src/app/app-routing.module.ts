@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'player-panel/:liga', component: PlayerPanelComponent },
   { path: 'player-card', component: PlayerCardComponent },
   { path: 'estadistica/:liga', component: StatisticsPanelComponent },
-  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  { path: ' ', redirectTo: 'inicio', pathMatch: 'full' },
 
 ];
 
